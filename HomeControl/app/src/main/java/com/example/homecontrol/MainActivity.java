@@ -19,6 +19,7 @@ import java.io.PrintWriter;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
@@ -212,9 +213,9 @@ public class MainActivity extends AppCompatActivity {
     }
     private void CheckDeviceStatus(Device device) {
         new Thread(() -> {
-            device.isOnline = false;
+            Socket clientSocket = new Socket();
             try {
-                Socket clientSocket = new Socket(device.ipAddress, 41007);
+                clientSocket.connect(new InetSocketAddress(device.ipAddress, 41007), 350);
 
                 // Send To Server
                 OutputStream os = clientSocket.getOutputStream();

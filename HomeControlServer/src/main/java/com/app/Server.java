@@ -95,7 +95,6 @@ public class Server  {
                                         );
                                     } else {
                                         Command = new ProcessBuilder(
-                                                "sudo",
                                                 "shutdown",
                                                 "-r",
                                                 "now"
@@ -122,7 +121,6 @@ public class Server  {
                                         );
                                     } else {
                                         Command = new ProcessBuilder(
-                                                "sudo",
                                                 "shutdown",
                                                 "now"
                                         );
@@ -149,7 +147,6 @@ public class Server  {
                                         );
                                     } else {
                                         Command = new ProcessBuilder(
-                                                "sudo",
                                                 "shutdown",
                                                 "now"
                                         );
