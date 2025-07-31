@@ -27,4 +27,5 @@ In the 'Packages' folder you will find an .apk and a .jar file.
 ## Requirements
 - An Android device
 - A device on the same Network
+  - Java 22
 - In order for Wake on Lan and Restore to function properly the device is required to use Ethernet connection and have Wake on Lan capabilities enabled from Bios as well as Device Manager
