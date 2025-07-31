@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addDeviceLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/deviceLabelInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        android:hint="Label"
+        android:background="?android:attr/editTextBackground"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:autofillHints="PC 01" />
+
+    <EditText
+        android:id="@+id/deviceMacInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        android:hint="Mac Address"
+        android:background="?android:attr/editTextBackground"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:autofillHints="00-00-00-00-00-00" />
+
+    <EditText
+        android:id="@+id/deviceIPInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="16dp"
+        android:hint="IP Address"
+        android:background="?android:attr/editTextBackground"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:autofillHints="192.168.1.1" />
+
+    <Button
+        android:id="@+id/submitDeviceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:text="Submit" />
+</LinearLayout>

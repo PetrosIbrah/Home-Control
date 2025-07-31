@@ -1,0 +1,49 @@
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:columnCount="2"
+    android:rowCount="2">
+
+    <Button
+        android:id="@+id/echoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="Echo"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="Restart"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/shutdownButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Shutdown"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/restoreButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Restore"
+        tools:ignore="HardcodedText" />
+</GridLayout>

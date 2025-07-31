@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <include layout="@layout/command_buttons_grid"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/wakeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wake On lan"
+        android:layout_marginTop="8dp"
+        tools:ignore="HardcodedText" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#CCCCCC" />
+    <TextView
+        android:id="@+id/ServerText"
+        android:layout_width="380dp"
+        android:layout_height="466dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="No actions, yet."
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

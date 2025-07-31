@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Home Control</string>
+    <string-array name="commands_array">
+        <item>Echo</item>
+        <item>Restart</item>
+        <item>Shutdown</item>
+        <item>Restore</item>
+    </string-array>
+</resources>
